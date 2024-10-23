@@ -155,7 +155,9 @@
             <p>Por favor, entre em contato para dúvidas ou suporte técnico. Não utilizamos esses dados para análise de cadastro.</p>
           </div>
           
-          <button type="submit">Enviar dados</button>
+       <div class="button-container">
+            <button type="submit">Enviar dados</button>
+          </div>
         </form>
       </section>
     </main>
@@ -174,7 +176,7 @@
         title="Envie uma mensagem à ALUCAR pelo Whatsapp"
       >
         <img
-          src="static/img/whatsapp-logo-128x128_resized.png"
+          src="{{ url_for('static', filename='img/whatsapp-logo-128x128_resized.png') }}"
           alt="Whatsapp da Alucar - locadora de veículos"
         />
       </a>
@@ -182,3 +184,4 @@
     
   </body>
 </html>
+
