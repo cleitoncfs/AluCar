@@ -8,9 +8,9 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="/static/img/favicon-32x32.png"
+      href="static/img/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="/static/css/style.css" />
+    <link rel="stylesheet" href="static/css/style.css" />
   </head>
   <body>
     <header class="secao-topo">
@@ -34,17 +34,17 @@
       <div class="galeria-imagens">
         <img
           class="img-conteudo"
-          src="/static/img/img1.jpg"
+          src="static/img/img1.jpg"
           alt="Frota de carros disponíveis"
         />
         <img
           class="img-conteudo"
-          src="/static/img/img2.jpg"
+          src="static/img/img2.jpg"
           alt="Carro esportivo alugado"
         />
         <img
           class="img-conteudo"
-          src="/static/img/img3.jpg"
+          src="static/img/img3.jpg"
           alt="Clientes satisfeitos da AluCar"
         />
     </div>
@@ -56,7 +56,6 @@
 
     <section class="secao-background-divisao">
       <div class="secao-largura-limitada">
-        <h3>Contato</h3>
       </div>
     </section>
 
@@ -144,6 +143,18 @@
               </select>
             </div>
           </fieldset>
+
+          <div id="contato">
+            <label for="contato">Contato</label>
+            <input
+              type="text"
+              name="contato"
+              placeholder="Digite seu contato"
+              required
+            />
+            <p>Por favor, entre em contato para dúvidas ou suporte técnico. Não utilizamos esses dados para análise de cadastro.</p>
+          </div>
+
           <button type="submit">Enviar dados</button>
         </form>
       </section>
@@ -163,7 +174,7 @@
         title="Envie uma mensagem à ALUCAR pelo Whatsapp"
       >
         <img
-          src="/static/img/whatsapp-logo-128x128_resized.png"
+          src="static/img/whatsapp-logo-128x128_resized.png"
           alt="Whatsapp da Alucar - locadora de veículos"
         />
       </a>
