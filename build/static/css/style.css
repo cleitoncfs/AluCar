@@ -117,63 +117,79 @@ header h1 {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Formulário de Contato */
+
+/* Estilo do Formulário */
 form {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+  }
+  
+  fieldset {
+    margin-bottom: 15px;
+  }
+  
+  .grupo-campo {
     display: flex;
     flex-direction: column;
-    padding: 16px 0;
-}
-
-fieldset {
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    padding: 20px;
     margin-bottom: 15px;
-}
-
-legend {
-    font-weight: bold;
-    color: var(--primary-color);
-}
-
-.grupo-campo {
-    margin-bottom: 15px;
-    text-align: left;
-}
-
-label {
-    font-weight: bold;
+  }
+  
+  .grupo-campo label {
     margin-bottom: 5px;
-    display: inline-block;
-}
-
-input, select {
-    width: 100%;
-    padding: 8px;
-    font-size: var(--font-size-base);
-    border: 1px solid #ccc;
+  }
+  
+  .grupo-campo input,
+  .grupo-campo select {
+    padding: 10px;
     border-radius: 4px;
-}
-
-button {
-    background-color: var(--primary-color); 
-    color: var(--secondary-color); 
-    padding: 8px 16px; 
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  .button-container {
+    text-align: left;
+  }
+  
+  .button-container button {
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     border: none;
-    border-radius: 4px; 
-    font-size: 14px; 
+    border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease; 
-    width: fit-content; 
-    align-self: left; 
-}
-
-button:hover {
-    background-color: #093d78; 
-    transform: scale(1.02); 
-}
-
-
+    font-size: 16px;
+  }
+  
+  .button-container button:hover {
+    background-color: #0d418a;
+  }
+  
+  /* Contato */
+  #contato {
+    position: relative; /* Para manter no fluxo normal da página */
+    margin-top: 20px; /* Ajuste de espaçamento */
+    width: 100%;
+  }
+  
+  #contato label {
+    margin-bottom: 5px;
+  }
+  
+  #contato input {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  #contato p {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #666; /* Cor para o texto explicativo */
+  }
+  
 /* Rodapé */
 footer {
     background-color: var(--background-color);
